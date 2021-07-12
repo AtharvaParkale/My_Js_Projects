@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>HTML5 Canvas</title>
-</head>
-
-<body>
-  <canvas id="draw" width="800" height="800"></canvas>
-  <script>
-    const canvas = document.querySelector('#draw');
+const canvas = document.querySelector('#draw');
     const ctx = canvas.getContext('2d');
 
     canvas.width = window.innerWidth;
@@ -56,18 +45,3 @@
 
     canvas.addEventListener('mouseup', () => isDrawing = false);
     canvas.addEventListener('mouseout', () => isDrawing = false);
-  </script>
-
-  <style>
-    html,
-    body {
-      margin: 0;
-    }
-    canvas{
-      border: 5px solid black;
-    }
-  </style>
-
-</body>
-
-</html>
